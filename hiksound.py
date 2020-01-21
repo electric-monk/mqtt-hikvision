@@ -6,11 +6,6 @@ import http.client
 import time
 import socket
 
-import logging
-http.client.HTTPConnection.debuglevel=1000
-logging.basicConfig()
-logging.getLogger().setLevel(logging.DEBUG)
-
 # A horrible hack, so as to allow us to recover the socket we still need from urllib
 class SocketGrabber:
 	def __init__(self):
